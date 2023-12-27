@@ -1,7 +1,5 @@
 # SpeedAddicted
 
-Development requirements:
-- npm,
-- webpack,
-- phaser,
-- httpster
+## Preview 🎉
+
+<https://javascript-ninjas.github.io/game-speed-addicted/>

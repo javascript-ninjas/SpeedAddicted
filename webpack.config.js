@@ -1,4 +1,6 @@
 module.exports = {
+    mode: "development",
+
     resolve: {
         extensions: ['.scss', '.es6.js', '.js', '']
     },
@@ -14,7 +16,7 @@ module.exports = {
     // devtool: "#cheap-module-source-map",
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.es6.js$/,
                 exclude: /node_modules/,
@@ -23,7 +25,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loader: "style!css!sass"
+                use: ["style-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.(htm|html)$/,
